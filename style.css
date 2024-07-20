@@ -1,0 +1,293 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    width: 85%;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+h1, h2 ,h3 {
+    color: #007BFF;
+}
+
+/* Navigaton styles */
+.logo img {
+    height: 170px;
+    width: 170px;
+    border-radius: 50%;
+}
+
+nav {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+nav .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    font-size: 35px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    text-decoration: underline;
+}
+
+/* section styles */
+section {
+    padding: 40px;
+}
+
+#home {
+    background-color: #d2d7db;
+    text-align: center;
+}
+
+h1 {
+    font-size: 3.5rem;
+}
+
+ h2{
+    font-size: 2.5rem;
+}
+
+h3{font-size: 2rem;}
+
+p { font-size: 1.5rem;}
+
+#home .container {
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    gap: 100px;
+}
+
+.main p {
+    font-size: 25px;
+}
+
+.main span {
+    font-size: 35px;
+    color: red;
+}
+
+.profile-image img {
+    height: 500px;
+    width: 500px;
+    border-radius: 50%;
+    align-items: flex-end;
+    border: 5px solid rgb(199, 7, 142);
+}
+
+
+#about, #portfolio, #blog, #contact {
+    background-color: #fff;
+}
+
+#about p, #skills ul, #projects .project, #contact p {
+    margin: 20px 0;
+}
+.btn {
+    display: inline-block;
+    padding: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #000000;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Button hover effect */
+.btn:hover {
+    background-color: #e229cd;
+}
+
+
+/* About Me */
+
+#about > .container > p > span {
+    color: red;
+}
+
+.skill-container {
+    width: 80%;
+    max-width: 600px;
+    margin: 50px auto;
+}
+
+.skill {
+    margin-bottom: 20px;
+}
+
+.skill p {
+    margin: 0 0 10px;
+    font-weight: bold;
+}
+
+.skill-bar {
+    width: 100%;
+    background-color: #ddd;
+    border-radius: 25px;
+    overflow: hidden;
+}
+.skill-level {
+    height: 30px;
+    background-color: #4caf50;
+    border-radius: 25px;
+    text-align: right;
+    padding-right: 10px;
+    color: white;
+    line-height: 30px; /* Center text vertically */
+}
+
+/* Contact */
+
+.mapbox { 
+    border: 5px solid red;
+}
+.mapbox iframe{
+    width: 100%;
+}
+
+.contact-form {
+    width: 100%;
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #4caf50;
+    outline: none;
+}
+
+submit-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4caf50;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+  
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 200px;
+    margin: 2px;
+}
+
+
+.footer-section h4 {
+    margin-bottom: 10px;
+}
+
+.footer-section p
+.footer-section a { 
+    color: #bbb;
+    text-decoration: none;
+}
+
+.footer-section a:hover {
+    color: #fff;
+}
+
+.social-icons a {
+    color: #bbb;
+    font-size: 20px;
+    margin: 0 10px;
+}
+
+.social-icons a:hover {
+    color: #fff;
+}
+
+.social-icons a:hover img {
+    transform: scale(1.1);
+}
+
+.social-icons a img {
+    transition: transform 0.3s ease;
+}
+
+.footer-bottom {
+    border-top: 1px solid #444;
+    margin-bottom: 10px;
+}
+.footer-bottom p {
+    font-size: 20px;
+}
+
